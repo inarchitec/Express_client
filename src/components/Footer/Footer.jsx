@@ -1,58 +1,66 @@
 import React from "react";
 import "./Footer.scss";
-
+import { FaLocationArrow, FaMobileAlt, FaEnvelope } from "react-icons/fa";
+import Payment from "../../assets/payments.png";
 const Footer = () => {
-  return (
-    <div className="footer">
-      <div className="top">
-        <div className="item">
-          <h1>Categories</h1>
-          <span>Furniture</span>
-          <span>Grain</span>
-          <span>Spice</span>
-          <span>All products</span>
-          <span>New Arrivals</span>
+    return (
+        <div className="footer">
+            <div className="footer-content">
+                <div className="col">
+                    <div className="title">About</div>
+                    <div className="text">
+                        Voluptatem accusantium doloremque laudantium, totam rem
+                        aperiam, eaque ipsa quae ab illo inventore veritatis et
+                        quasi architecto beatae vitae dicta sunt explicabo eaque
+                        ipsa quae ab illo.
+                    </div>
+                </div>
+                <div className="col">
+                    <div className="title">Contact</div>
+                    <div className="c-item">
+                        <FaLocationArrow />
+                        <div className="text">
+                            Kayaloram Rd, Punnamada, Kottankulangara, Alappuzha,
+                            Kerala, 688006
+                        </div>
+                    </div>
+                    <div className="c-item">
+                        <FaMobileAlt />
+                        <div className="text">Phone: 0471 272 0261</div>
+                    </div>
+                    <div className="c-item">
+                        <FaEnvelope />
+                        <div className="text">Email: store@jsdev.com</div>
+                    </div>
+                </div>
+                <div className="col">
+                    <div className="title">Categories</div>
+                    <span className="text">Grain</span>
+                    <span className="text">Spice</span>
+                    <span className="text">Furniture</span>
+                    
+                </div>
+                <div className="col">
+                    <div className="title">Pages</div>
+                    <span className="text">Home</span>
+                    <span className="text">About</span>
+                    <span className="text">Privacy Policy</span>
+            
+                    <span className="text">Terms & Conditions</span>
+                    <span className="text">Contact Us</span>
+                </div>
+            </div>
+            <div className="bottom-bar">
+                <div className="bottom-bar-content">
+                    <span className="text">
+                        Ethio Express 2023 .
+                        
+                    </span>
+                    <img src={Payment} alt=''/>
+                </div>
+            </div>
         </div>
-        <div className="item">
-          <h1>Links</h1>
-          <span>FAQ</span>
-          <span>Pages</span>
-          <span>Stores</span>
-          <span>Compare</span>
-          <span>Cookies</span>
-        </div>
-        <div className="item">
-          <h1>About</h1>
-          <span>
-            Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit
-            amet conse ctetur adipisicing elit, seddo eiusmod tempor incididunt
-            ut labore etdolore.
-          </span>
-        </div>
-        <div className="item">
-          <h1>Contact</h1>
-          <span>
-            Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit
-            amet conse ctetur adipisicing elit, seddo eiusmod tempor incididunt
-            ut labore etdolore.
-          </span>
-        </div>
-      </div>
-      <div className="bottom">
-        <div className="left">
-          <span className="logo">Ethio Express</span>
-          <span className="copyright">
-            © Copyright 2023. All Rights Reserved
-          </span>
-        </div>
-        <div className="right">
-          <img src="/img/payment.png" alt="" />
-        </div>
-      </div>
-    </div>
-  );
+    );
 };
 
 export default Footer;
