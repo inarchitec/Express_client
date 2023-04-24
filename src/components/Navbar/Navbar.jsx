@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import SearchIcon from "@mui/icons-material/Search";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
-import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
+
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import { Link } from "react-router-dom";
 import "./Navbar.scss"
@@ -45,10 +45,10 @@ const Navbar = () => {
           </div>
           {/* ----- login and register ---- */}
           <div className="item">
-            <Link className ="link" to="/">Register</Link>
+            <Link className ="link" to="/register">Register</Link>
           </div>
           <div className="item">
-            <Link className ="link" to="/">Login</Link>
+            <Link className ="link" to="/login">Login</Link>
           </div>
           {/* ----- login and register end---- */}
           <div className="item">
