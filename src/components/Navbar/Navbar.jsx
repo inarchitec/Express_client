@@ -43,9 +43,14 @@ const Navbar = () => {
           <div className="item">
             <Link className ="link" to="/about">About</Link>
           </div>
+          {/* ----- login and register ---- */}
           <div className="item">
-            <Link className ="link" to="/">Contact</Link>
+            <Link className ="link" to="/">Register</Link>
           </div>
+          <div className="item">
+            <Link className ="link" to="/">Login</Link>
+          </div>
+          {/* ----- login and register end---- */}
           <div className="item">
             <Link className ="link" to="/"></Link>
           </div>
