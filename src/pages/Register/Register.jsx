@@ -4,11 +4,8 @@ import React from "react";
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.5)
-    ),
-    url("https://images.unsplash.com/photo-1508615039623-a25605d2b022?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80")
+  background:
+    url("https://images.unsplash.com/photo-1524522173746-f628baad3644?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1231&q=80")
       center;
   background-size: cover;
   display: flex;
@@ -17,12 +14,16 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
-  width: 40%;
+  width: 25%;
   padding: 20px;
   background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.2s ease-in-out;
   
+  &:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 255, 0.8);
+  }
 `;
-
 const Title = styled.h1`
   font-size: 24px;
   font-weight: 300;
@@ -60,12 +61,12 @@ const Register = () => {
       <Wrapper>
         <Title>CREATE AN ACCOUNT</Title>
         <Form>
-          <Input placeholder="name" />
+          <Input placeholder="first name" />
           <Input placeholder="last name" />
-          <Input placeholder="username" />
+          
           <Input placeholder="email" />
           <Input placeholder="password" />
-          <Input placeholder="confirm password" />
+         
           <Agreement>
             By creating an account, I consent to the processing of my personal
             data in accordance with the <b>PRIVACY POLICY</b>

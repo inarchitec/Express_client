@@ -4,24 +4,29 @@ import React from "react";
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.5)
-    ),
-    url("https://images.unsplash.com/photo-1557683311-eac922347aa1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1129&q=80")
+  
+  background: 
+    url("https://images.unsplash.com/photo-1585713181935-d5f622cc2415?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80")
       center;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
+  
 `;
 
 const Wrapper = styled.div`
   width: 25%;
   padding: 20px;
   background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.2s ease-in-out;
   
+  &:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 255, 0.8);
+  }
 `;
+
 
 const Title = styled.h1`
   font-size: 24px;
