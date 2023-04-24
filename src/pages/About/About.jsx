@@ -35,7 +35,7 @@ const ListItem = styled.li`
   margin: 1rem;
   padding: 1rem;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 7px;
 `;
 
 const About = () => {
